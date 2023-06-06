@@ -1,7 +1,8 @@
 *{
-    padding: 0x;
+    padding: 0px;
     margin: 0px;
     border: 0px;
+    
 }
 a{
     outline: none;
@@ -23,8 +24,9 @@ header{
 header a{
     color: #F2ECB9;
 }
-.nickname{
-    color: #F2ECB9
+.nickname p{
+    color: #F2ECB9;
+    font-size: 40px;
 }
 .box{
     display: flex;
@@ -39,7 +41,8 @@ header a{
 }
 .sec1{
     background-color: #24150E;  
-    text-transform: uppercase
+    text-transform: uppercase;
+    padding-bottom: 115px;
 }
 .container_fluid0{
     padding: 0px 160px;
@@ -48,11 +51,11 @@ header a{
 .container_fluid1{
     width: 1540px;
     padding: 0px 160px;
-    padding-top: 120px;
 }
 .wrapper{
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
+    /* justify-content: space-between; */
 }
 .desc{
     color: #F2ECB9;
@@ -73,6 +76,7 @@ header a{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 605px;
     height: 128px;
     background-color: #F2ECB9;
@@ -89,18 +93,17 @@ header a{
     height: 700px;
     border-radius: 50%;
     padding-top: 100px;
-    padding-bottom: 115px;
 }
 .sec2{
     background-color: #F2ECB9;
-    text-transform: uppercase
+    text-transform: uppercase;
+    padding-top: 120px;
 }
 .heading1{
     display: flex;
     justify-content: center;
     font-size: 72px;
     padding-bottom: 125px;
-    text-transform: uppercase;
 }
 .possible{
     display: flex;
@@ -110,24 +113,42 @@ header a{
     padding-bottom: 160px;
 }
 .item1{
-    padding: 205px 140px;
+    /* padding: 205px 140px; */
     background-color: #8C6472;
     border-radius: 500px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .item2{
-    padding: 205px 180px;
+    /* padding: 205px 180px; */
     background-color: #8C6472;
     border-radius: 500px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .item3{
-    padding: 205px 206px;
+    /* padding: 205px 206px; */
     background-color: #8C6472;
     border-radius: 500px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sec3{
     background-color: #3F2A1D;
+    padding-top: 120px;
+    padding-bottom: 140px;
+    
 }
 .heading2{
     display: flex;
@@ -154,9 +175,15 @@ header a{
     color: #F2ECB9;
     text-transform: uppercase;
 }
-.contant1 {
+.contant:nth-child(odd){
     display: flex;
     justify-content: space-between;
+    padding-bottom: 100px;
+}
+.contant:nth-child(even){
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
     padding-bottom: 100px;
 }
 .inner{
@@ -164,24 +191,18 @@ header a{
     flex-direction: column;
     justify-content: center ;
 }
-.contant2 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    padding-bottom: 100px;
-}
-.contant3 {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 140px;
-}
+
 .sec4{
     background-color: #F2ECB9;;
+    padding-top: 120px;
+    text-transform: uppercase;
+    padding-bottom: 160px;
 }
 .chest{
     display: flex;
     justify-content: space-around;
-    padding-bottom: 160px;
+    gap: 20px;
+    
 }
 .chest a{
     color: #F2ECB9;
@@ -193,7 +214,7 @@ header a{
     padding-bottom: 70px;
 }
 
-.squad1{
+.squad:nth-child(even){
     color: #24150E;
     text-transform: uppercase;
     font-size: 72px;
@@ -207,37 +228,26 @@ header a{
     justify-content: center;
 }
    
-.squad2{
+.squad:nth-child(odd){
     color: #24150E;
     text-transform: uppercase;
     font-size: 72px;
-    background-color: #8C6472;
-    text-align: center;
     height: 500px;
     width: 500px;
+    background-color: #8C6472;
+    text-align: center; 
     display: flex;   
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.squad3{
-    color: #24150E;
-    text-transform: uppercase;
-    font-size: 72px;
-    background-color: #8C6472;
-    text-align: center;
-    height: 500px;
-    display: flex;   
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-}
+   
 footer{
     background-color: #24150E;
     color: white;
     text-transform: uppercase;
     font-size: 40px;
+    padding: 30px 0px 70px;
 }
 footer .nickname{
     color: #F2ECB9;
@@ -254,11 +264,14 @@ footer a{
 .cnopick2:hover{
  background-color: #bf8363;
 }
+.connect:hover{
+    background-color: #bf8363;
+}
 
-@media (max-width: 600px){
+@media (max-width: 400px){
 
     .container_fluid{
-        width: 600px;
+      max-width: 400px;
         padding: 0px;
         
     }
@@ -275,7 +288,7 @@ footer a{
     }
     .container_fluid0{
         padding: 0px;
-        width: 600px;
+        width: 400px;
     }
     .wrapper{
         display: flex;
@@ -309,7 +322,7 @@ footer a{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 80px;
+       
     }
     .connect{
         display: flex;
@@ -319,7 +332,7 @@ footer a{
         padding: 0px;
     }
    .container_fluid1{
-        width: 600px;
+        max-width: 400px;
         padding: 50px 113px;
    }
    .heading1{
@@ -339,56 +352,70 @@ footer a{
    .sec2 .container_fluid1{
     padding: 0px;
    }
+   .sec2{
+    padding-top: 0px;
+   }
    .item1{
-        padding: 60px 40px;
+        padding: 60px 60px;
         text-align: center;
-        
-        
+        width: 0px;
+        height: 0px;
+               
    }
    .item2{
-    padding: 60px 50px;
+    padding: 60px 60px;
     text-align: center;
+    width: 0px;
+    height: 0px;
+    
 }
 .item3{
     padding: 60px 60px;
     text-align: center;
+    width: 0px;
+    height: 0px;
+    
 }   
 .heading2{
     padding: 40px 0px 70px;
 }
-.heading2 h1{
+.heading2 p{
     font-size: 32px;
   
 }
 .sec3 .container_fluid1{
     padding: 0px;
 }
+.sec3{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 .wrapper2{
     flex-direction: column;
 }
 .wrapper2 img{
     box-sizing: border-box;
-    width: 600px;
-    height: 364px;   
-}
-.wrapper2 h1{
-    font-size: 24px;
-    padding-left: 20px;
-    padding-bottom: 10px;
+    width: 400px;
+    height: 265px;   
 }
 .wrapper2 p{
     font-size: 20px;
     padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+/* .wrapper2 p{
+    font-size: 20px;
+    padding-left: 20px;
     padding: 20px;
-}
-.contant1{
+} */
+
+.contant:nth-child(even){
     flex-direction: column-reverse;
     padding-bottom: 100pz;
 }
-.contant2{
-    flex-direction: column-reverse;
-    padding-bottom: 100pz;
-}
+
 .contant2 .inner{
     display: flex;
     align-items: end;
@@ -397,38 +424,42 @@ footer a{
 .contant2 p{
     padding-right: 0px;
 }
-.contant3{
+.contant:nth-child(odd){
     flex-direction: column-reverse;
     padding-bottom: 100px;
 }
 .sec4 .heading1{
     padding: 60px 0px 40px;
 }
+.sec4{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 .chest{
+
     flex-direction: column;
     align-items: center;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
+
     
 }
 
-.squad1{
-    width: 200px;
-    height: 200px;
+.squad:nth-child(even){
+    width: 150px;
+    height: 150px;
     font-size: 20px;
     margin-bottom: 20px;
+     justify-content: start;
 }
-.squad2{
-    width: 200px;
-    height: 200px;
+.squad:nth-child(odd){
+    width: 150px;
+    height: 150px;
     font-size: 20px;
     margin-bottom: 20px;
+    justify-content:start;  
 }
-.squad3{
-    width: 200px;
-    height: 200px;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
+
 .cnopick2{
     width: 120px;
     height: 30px;
@@ -437,4 +468,8 @@ footer a{
 .sec4 .container_fluid1{
     padding: 0px;
 }
+footer{
+    padding: 50px 0px;
+}
+
 }
