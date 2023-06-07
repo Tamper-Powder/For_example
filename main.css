@@ -211,9 +211,11 @@ header a{
     background: #24150E;
     border-radius: 50px;
     display: inline-block;
+    
 }
 .chest p{
     padding-bottom: 70px;
+    
 }
 
 .squad:nth-child(even){
@@ -438,35 +440,42 @@ footer a{
     padding-top: 0px;
     padding-bottom: 0px;
 }
-
 .chest{
 
     flex-direction: column;
     align-items: center;
-    /* padding-bottom: 80px; */
+   
 
     
+}
+.chest p{
+    padding: 0px;
 }
 
 .squad:nth-child(even){
     width: 150px;
     height: 150px;
     font-size: 20px;
-    margin-bottom: 20px;
-     justify-content: start;
+     justify-content: center;
+     gap:20px
+     
 }
 .squad:nth-child(odd){
     width: 150px;
     height: 150px;
     font-size: 20px;
-    margin-bottom: 20px;
-    justify-content:start;  
+    justify-content: center;
+    gap:20px
+   
 }
 
 .cnopick2{
     width: 120px;
     height: 30px;
     font-size: 10px;
+    box-sizing: border-box;
+
+    
 }
 .sec4 .container_fluid1{
     padding: 0px;
